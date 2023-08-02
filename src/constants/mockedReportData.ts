@@ -18,6 +18,15 @@ export const ProfitsData: MockedDataType = {
         ["Twitter", 555.5, "commercial", 444.4, 333.3, 222.2, 111.1, 999.9],
         ["Glovo", 987.6, "commercial", 543.2, {d: 789.1, color: "selected"}, 234.5, 657.8, 123.4],
         ["YouTube", 1234.5, "internal", {d: 876.5, color: "selected"}, 543.2, 987.6, 345.2, 1111.1],
+        ["Facebook", 789.0, "commercial", 987.6, { d: 765.4, color: "selected" }, 654.3, 543.2, 432.1],
+        ["Instagram", 345.6, "internal", 234.5, 123.4, { d: 12.5, color: "selected" }, 34.6, 123.7],
+        ["TikTok", 678.9, "commercial", 789.0, 890.1, 901.2, 123.4, { d: 234.5, color: "selected" }],
+        ["WhatsApp", 432.1, "commercial", 543.2, 654.3, 765.4, 876.5, 987.6],
+        ["Snapchat", 123.4, "internal", 234.5, 345.6, 456.7, 567.8, 678.9],
+        ["LinkedIn", 345.6, "commercial", 456.7, 567.8, 678.9, 789.0, 890.1],
+        ["Pinterest", 567.8, "internal", 678.9, 123.4, 234.5, 345.6, 456.7],
+        ["Zoom", 678.9, "commercial", 789.0, 890.1, 901.2, 12.5, 123.4],
+        ["Skype", 123.4, "commercial", 234.5, 345.6, 456.7, 567.8, 678.9],
     ]
 };
 
@@ -41,6 +50,19 @@ export const ExpensesData: MockedDataType = {
         ["Twitter", 10254.2, "commercial", 444.4, 333.3, 222.2, 111.1, 999.9, 555.5, 444.4],
         ["Glovo", 50314.0, "commercial", 543.2, {d: 789.1, color: "selected"}, 234.5, 657.8, 123.4, 666.6, {d: 4567.1, color: "selected"},],
         ["YouTube", 40012.0, "internal", 543.2, 987.6, 345.2, {d: 548.5, color: "selected"}, 1111.1, 444.4, 333.3],
+        ["Facebook", 23123.4, "commercial", 12345.6, { d: 5432.1, color: "selected" }, 6789.0, 9876.5, 4567.8, 8765.4, { d: 9876.5, color: "selected" }],
+        ["Instagram", 6789.0, "internal", 9876.5, 8765.4, 7654.3, 6543.2, { d: 5432.1, color: "selected" }, 4321.0, 3210.9],
+        ["TikTok", 2109.8, "commercial", 3210.9, 4321.0, { d: 5432.1, color: "selected" }, 6543.2, 7654.3, 8765.4, 9876.5],
+        ["WhatsApp", 5432.1, "commercial", 6543.2, 7654.3, 8765.4, 9876.5, 2109.8, 3210.9, { d: 4321.0, color: "selected" }],
+        ["Snapchat", 4567.8, "internal", 5678.9, 6789.0, 7890.1, 8901.2, 9012.3, 1234.5, 2345.6],
+        ["LinkedIn", 6789.0, "commercial", 7890.1, 8901.2, 9012.3, 1234.5, 2345.6, 3456.7, 4567.8],
+        ["Pinterest", 1234.5, "internal", 2345.6, 3456.7, 4567.8, 5678.9, 6789.0, 7890.1, 8901.2],
+        ["Zoom", 2109.8, "commercial", 3210.9, 4321.0, 5432.1, 6543.2, 7654.3, 8765.4, 9876.5],
+        ["Skype", 5432.1, "commercial", 6543.2, 7654.3, 8765.4, 9876.5, 2109.8, 3210.9, 4321.0],
+        ["Netflix", 6543.2, "internal", 7654.3, 8765.4, 9876.5, 2109.8, 3210.9, 4321.0, 5432.1],
+        ["Amazon", 7654.3, "commercial", 8765.4, 9876.5, 2109.8, 3210.9, 4321.0, 5432.1, 6543.2],
+        ["Google", 8765.4, "internal", 9876.5, 2109.8, 3210.9, 4321.0, 5432.1, 6543.2, 7654.3],
+        ["Apple", 9876.5, "commercial", 2109.8, 3210.9, 4321.0, 5432.1, 6543.2, 7654.3, 8765.4],
     ]
 };
 
@@ -61,13 +83,24 @@ export const EmployeesData: MockedDataType = {
     ],
     data: [
         ["Online-School", true, 1024.3, "commercial", 2048.2, 4096.0, 1058.1, 941.7, 4519.4, 2013.1, 513.1, 907.3],
-        ["City-Scope", true, 2345.1, "internal", 3465.3, {d: 12.5, color: "selected"}, 547.0, 5416.1, 1654.8, 987.4, 500.0, 789.5],
+        ["City-Scope", true, 2345.1, "internal", 3465.3, { d: 12.5, color: "selected" }, 547.0, 5416.1, 1654.8, 987.4, 500.0, 789.5],
         ["Spotify", false, null, "commercial", null, null, null, null, null, null, null, null],
-        ["Twitter", true, 555.5, "commercial", 444.4, 333.3, 222.2, 1111.1, 999.9, 555.5, 444.4, 222.2],
+        ["Twitter", true, 5643.5, "commercial", 4345.2, 3246.0, 3428.1, 2653.7, 1574.4, 899.1, 789.3, 1122.8],
         ["Glovo", false, null, "commercial", null, null, null, null, null, null, null, null],
-        ["YouTube", true, 1234.5, "internal", {d: 876.5, color: "selected"}, 543.2, 987.6, 345.2, 1111.1, 444.4, 333.3, 333.3],
-        ["GoDee", true, 6543.2, "commercial", 987.6, 765.4, {d: 987.6, color: "selected"}, 876.5, 654.3, 543.2, 432.1, 321.0],
-        ["Enji", true, 10000.0, "commercial", 2000.0, 3000.0, 4000.0, 5000.0, 6000.0, {d: 7000.0, color: "selected"}, {d: 8000.0, color: "selected"}, {d: 9000.0, color: "selected"}],
+        ["YouTube", true, 8754.9, "internal", { d: 876.5, color: "selected" }, 543.2, 987.6, 345.2, 1111.1, 444.4, 333.3, 333.3],
+        ["GoDee", true, 11234.7, "commercial", 987.6, 765.4, { d: 987.6, color: "selected" }, 876.5, 654.3, 543.2, 432.1, 321.0],
+        ["Enji", true, 15000.0, "commercial", 2890.0, 3050.1, 4140.0, 5560.4, 6040.1, { d: 7000.7, color: "selected" }, { d: 8000.0, color: "selected" }, { d: 9000.0, color: "selected" }],
+        ["Microsoft", false, null, "commercial", null, null, null, null, null, null, null, null],
+        ["Apple", true, 20876.0, "internal", 2287.0, 3355.4, 4433.9, 5990.8, 6151.5, 7651.2, 8999.1, 9076.5],
+        ["Amazon", false, null, "commercial", null, null, null, null, null, null, null, null],
+        ["Google", true, 30785.0, "commercial", 3605.3, 4020.2, 5011.1, 6012.9, 6850.5, 7900.6, 8301.1, 9915.2],
+        ["Facebook", true, 34590.0, "internal", 3990.0, 4440.1, 5899.9, 6234.3, 7089.3, 7998.0, 8990.7, 9934.2],
+        ["Netflix", true, 40450.0, "commercial", 4678.0, 5200.0, 6245.4, 7000.7, 7654.0, 8001.1, 8500.3, 9787.6],
+        ["Uber", true, 43981.0, "commercial", 5200.1, 5900.0, 6330.0, 7100.6, 8000.8, 8899.1, 9009.1, 10000.9],
+        ["Airbnb", true, 50200.0, "commercial", 6100.0, 7000.9, 7540.8, 8450.5, 9140.0, 9600.0, 10020.2, 10500.4],
+        ["Tesla", false, null, "internal", null, null, null, null, null, null, null, null],
+        ["SpaceX", true, 60500.0, "commercial", 8800.0, 9200.0, 10500.0, 11000.0, 11500.0, 12000.0, 13000.0, 14000.0],
+        ["Samsung", false, null, "commercial", null, null, null, null, null, null, null, null],
     ]
 };
 
