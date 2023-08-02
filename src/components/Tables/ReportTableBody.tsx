@@ -45,6 +45,20 @@ const ReportTableBody: React.FC<Props> = ({data, metadata}) => {
                                         empty
                                     </td>;
                                 }
+                            } else if (typeof detectedCellData === "boolean") {
+                                return (
+                                    <td className={clsx(cellAlignProps)} key={generateUniqueKey(cellIndex)}>
+                                        {detectedCellData ? (
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="7" fill="green" />
+                                            </svg>
+                                        ) : (
+                                            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="8" cy="8" r="7" fill="red" />
+                                            </svg>
+                                        )}
+                                    </td>
+                                );
                             } else {
                                 return <td
                                     className={clsx(cellAlignProps)}
