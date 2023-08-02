@@ -5,7 +5,7 @@ export interface HeaderType {
     align?: "left" | "right" | "center";
 }
 
-export type DataType = (string | number | DataObjectType)[];
+export type DataType = (string | number | boolean | null | DataObjectType)[];
 
 export interface DataObjectType {
     d: number;
