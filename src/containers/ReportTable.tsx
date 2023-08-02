@@ -1,14 +1,18 @@
 import React from 'react';
-import {ProfitsData} from "../constants/mockedReportData";
 import ReportTableHeader from "../components/Tables/ReportTableHeader";
 import ReportTableBody from "../components/Tables/ReportTableBody";
+import {MockedDataType} from "../types";
 
-const ReportTable = () => {
+interface Props {
+    report: MockedDataType;
+}
+
+const ReportTable: React.FC<Props> = ({report}) => {
     return (
         <>
             <table>
-                <ReportTableHeader headerMetaData={ProfitsData.header}/>
-                <ReportTableBody data={ProfitsData.data}/>
+                <ReportTableHeader headerMetaData={report.header}/>
+                <ReportTableBody data={report.data}/>
             </table>
         </>
     );
