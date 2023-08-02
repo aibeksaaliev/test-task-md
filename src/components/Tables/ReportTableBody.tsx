@@ -37,7 +37,7 @@ const ReportTableBody: React.FC<Props> = ({data, metadata}) => {
                                     >
                                         0
                                     </td>;
-                                } else if (metadata[cellIndex].type === "string") {
+                                } else {
                                     return <td
                                         className={clsx(cellAlignProps)}
                                         key={generateUniqueKey(cellIndex)}
