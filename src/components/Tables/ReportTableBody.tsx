@@ -14,11 +14,13 @@ const ReportTableBody: React.FC<Props> = ({data}) => {
                 return (
                     <tr key={generateUniqueKey(index)}>
                         {rowData.map((cellData, cellIndex) => {
-                            const detectedCellData = cellData as string | number | DataObjectType;
-                            if (typeof detectedCellData === "object" && "d" in detectedCellData) {
+                            const detectedCellData = cellData as string | boolean | null | number | DataObjectType;
+                            if (typeof detectedCellData === "object" && detectedCellData !== null && "d" in detectedCellData) {
                                 return <td key={generateUniqueKey(cellIndex)}>{detectedCellData.d}</td>;
+                            } else if (detectedCellData === null) {
+                                return <td key={generateUniqueKey(cellIndex)}>empty</td>;
                             } else {
-                                return <td key={generateUniqueKey(cellIndex)}>{detectedCellData}</td>;
+                                return <td key={generateUniqueKey(cellIndex)}>{detectedCellData.toString()}</td>;
                             }
                         })}
                     </tr>
