@@ -27,7 +27,7 @@ function App() {
     };
 
     return (
-        <div>
+        <div className="container">
             <ReportDropdown onChange={handleReportData}/>
             <ReportTable report={reportData}/>
         </div>
