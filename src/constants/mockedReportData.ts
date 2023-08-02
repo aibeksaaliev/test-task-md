@@ -62,9 +62,9 @@ export const EmployeesData: MockedDataType = {
     data: [
         ["Online-School", true, 1024.3, "commercial", 2048.2, 4096.0, 1058.1, 941.7, 4519.4, 2013.1, 513.1, 907.3],
         ["City-Scope", true, 2345.1, "internal", 3465.3, {d: 12.5, color: "selected"}, 547.0, 5416.1, 1654.8, 987.4, 500.0, 789.5],
-        ["Spotify", false, null, "commercial"],
+        ["Spotify", false, null, "commercial", null, null, null, null, null, null, null, null],
         ["Twitter", true, 555.5, "commercial", 444.4, 333.3, 222.2, 1111.1, 999.9, 555.5, 444.4, 222.2],
-        ["Glovo", false, null, "commercial"],
+        ["Glovo", false, null, "commercial", null, null, null, null, null, null, null, null],
         ["YouTube", true, 1234.5, "internal", {d: 876.5, color: "selected"}, 543.2, 987.6, 345.2, 1111.1, 444.4, 333.3, 333.3],
         ["GoDee", true, 6543.2, "commercial", 987.6, 765.4, {d: 987.6, color: "selected"}, 876.5, 654.3, 543.2, 432.1, 321.0],
         ["Enji", true, 10000.0, "commercial", 2000.0, 3000.0, 4000.0, 5000.0, 6000.0, {d: 7000.0, color: "selected"}, {d: 8000.0, color: "selected"}, {d: 9000.0, color: "selected"}],

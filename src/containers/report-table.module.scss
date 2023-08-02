@@ -1,0 +1,84 @@
+@use "../styles/vars/colors" as *;
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px 10px 0 0;
+  border-spacing: 10px 0;
+  overflow: hidden;
+}
+
+.thead {
+  background-color: $dark-bg;
+  color: $white-text;
+  height: 60px;
+  text-align: center;
+}
+
+.thead tr th {
+  padding: 8px;
+  &:first-child {
+    padding-left: 20px;
+    overflow: hidden;
+    text-indent: -200px;
+  }
+  &:last-child {
+    padding-right: 40px;
+    overflow: hidden;
+    text-indent: -200px;
+  }
+}
+
+.tbody {
+  color: $base-text;
+  font-size: 15px;
+}
+
+.tbody tr {
+  height: 50px;
+  &:nth-child(even) {
+    background-color: $hover-bg;
+  }
+  &:hover {
+    background-color: $hover-bg;
+    color: $black-text;
+  }
+}
+
+.tbody tr td {
+  padding: 8px;
+  &:first-child {
+    padding-left: 20px;
+    overflow: hidden;
+    text-indent: -200px;
+    &:hover {
+      background-color: $hover-bg;
+      border-radius: 0;
+    }
+  }
+  &:last-child {
+    padding-right: 40px;
+    &:hover {
+      background-color: $hover-bg;
+      border-radius: 0;
+    }
+  }
+  &:hover {
+    background-color: $black-text;
+    color: $white-text;
+    border-radius: 5px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
